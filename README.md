@@ -12,7 +12,7 @@ Linux
 1. Pasos previos a la instalación :
 - Verificar que la configuración del servidor apache tenga habilitada la sobreescritura de URLs en el archivo (generalmente ubicado en) /etc/httpd/conf/httpd.conf
 - Reemplazar la linea AllowOverride None por AllowOverride All:
-
+-
     # AllowOverride controls what directives may be placed in .htaccess files.
     # It can be "All", "None", or any combination of the keywords:
     # Options FileInfo AuthConfig Limit
