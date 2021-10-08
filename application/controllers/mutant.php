@@ -5,10 +5,13 @@ class Mutant extends CI_Controller {
    public function index(){
 	    
 		  $input_data = json_decode(trim(file_get_contents('php://input')), true);
-        $dna=trim($input_data['dna']);
-        $dna=str_replace(['\'', '\"', '[', ']'], '', $dna);
- 
-	    //$dna='ATGCGA,CAGTGC,TTATGT,AGAAGG,CCCCTA,TCACTG';
+                  if (!isset($input_data['dna'])) {
+        	     http_response_code(403);
+	             die('Forbidden');
+                  }	
+	         $dna=trim($input_data['dna']);
+                 $dna=str_replace(['\'', '\"', '[', ']'], '', $dna);
+	         //$dna='ATGCGA,CAGTGC,TTATGT,AGAAGG,CCCCTA,TCACTG';
 		 if( (!preg_match('/^[ATCG\,]*$/', $dna)) || ($dna=='') ){
 		   http_response_code(403);
 	      die('Forbidden');
