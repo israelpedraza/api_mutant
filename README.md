@@ -12,14 +12,9 @@ Linux
 1. Pasos previos a la instalación :
 - Verificar que la configuración del servidor apache tenga habilitada la sobreescritura de URLs en el archivo (generalmente ubicado en) /etc/httpd/conf/httpd.conf
 - Reemplazar la linea AllowOverride None por AllowOverride All:
--
-    # AllowOverride controls what directives may be placed in .htaccess files.
-    # It can be "All", "None", or any combination of the keywords:
-    # Options FileInfo AuthConfig Limit
-    #
-    AllowOverride None
+
     
-Por:
+Ejemplo:
 
     # AllowOverride controls what directives may be placed in .htaccess files.
     # It can be "All", "None", or any combination of the keywords:
@@ -30,13 +25,13 @@ Por:
 2. Instalación del proyecto en el server
 - Descargar el repositorio y ubicar los fuentes en el DocumentRoot (generalmente ubicado en) /var/www/html/
 - Podrá ver un listado de Directorios y Archivos de la siguiente manera:
-.htaccess
- application
- db
- index.php
- isMutant.php
- robots.txt
- system
+    .htaccess
+     application
+     db
+     index.php
+     isMutant.php
+     robots.txt
+     system
 <img width="494" alt="Screen Shot 2021-10-08 at 8 06 48 AM" src="https://user-images.githubusercontent.com/92068113/136562403-960436dd-f240-404e-9212-d9bbefdad854.png">
 
 
