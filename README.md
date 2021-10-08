@@ -37,6 +37,10 @@ Por:
  isMutant.php
  robots.txt
  system
+<img width="494" alt="Screen Shot 2021-10-08 at 8 06 48 AM" src="https://user-images.githubusercontent.com/92068113/136562403-960436dd-f240-404e-9212-d9bbefdad854.png">
+
+
+
 
 3. Creación y configuración de la BD
 - El archivo dump de la base de datos está ubicado en el directorio /db y se llama api_mutant.sql
@@ -51,6 +55,10 @@ Por:
   $db['default']['password'] = 'CONTRASEÑA';
   $db['default']['database'] = 'api_mutant';
   $db['default']['dbdriver'] = 'mysqli';
+
+<img width="381" alt="Screen Shot 2021-10-08 at 8 06 02 AM" src="https://user-images.githubusercontent.com/92068113/136562436-8dce8d79-532b-471d-b705-e7c4cc5aec88.png">
+
+
 
 4. En este punto ya el proyecto debe estar funcional y consumible vía URL
 - Si se presente algun error de despliegue, verificar que tenga correctamente instalado PHP7.2 y el driver de MySQL
